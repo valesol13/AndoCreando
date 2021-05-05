@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--action define donde se van a enviar los datos -->
+<!--method define que hacer con los datos, crear datos nuevos (POST) o pedir
+información (GET) -->
+<!-- target define donde mostrar la respuesta al formulario -->
+<a href="#" 
+class="custom-logo-link no-t-logo" rel="home" itemprop="url">
+    <img width="310" height="50" src="img/Logo_combinado_transparente_2-1-300x48_NEGRO.png" 
+    class="custom-logo" 
+    alt="Hacemos tu web" 
+    itemprop="logo" 
+    data-src="img/Logo_combinado_transparente_2-1-300x48.png" 
+    data-sizes="(max-width: 310px) 100vw, 310px">
+</a>
+
+<form action="Link" method="POST" target="_blank">
+
+
+
+    <div class="container">
+        <!--<form action="/action_page.php">-->
+        <div class="row">
+          <div class="col-25">
+            <label for="nombre">Nombre</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="nombre" name="firstname" placeholder="Tu nombre y apellido">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="tipotel">Tipo de telefono</label>
+          </div>
+          <div class="col-75">
+            <select id="tipotel" name="tipotel">
+              <option value="fijo">Fijo</option>
+              <option value="celular">Celular</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+              <label for="telefono">Telefono</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="telefono" name="telefono" placeholder="Telefono">
+            </div>
+          </div>
+
+        <div class="row">
+            <div class="col-25">
+              <label for="mail">Correo</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="mail" name="mail" placeholder="Correo electronico">
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="descripcion">Descripcion</label>
+          </div>
+          <div class="col-75">
+            <textarea id="descripcion" name="descripcion" placeholder="Contanos que proyecto necesitas.." style="height:200px"></textarea>
+          </div>
+        </div>
+       
+        <div class="row">
+          <input type="submit" value="Enviar Consulta">
+        </div>
+       
+     </form>
+</form>
+</body>
+</html>
+
+<style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Original Surfer', cursive;
+      
+      }
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    input[type=email], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    input[type=select], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid white;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    input[type=select], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid white;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    
+    input[type=submit] {
+      background-color:#45a049;
+      color: white;
+      padding: 12px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 15px;
+      padding: 20px;
+      background-color:rgb(0, 0, 54);
+     color: white;
+    }
+    
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+    </style>
